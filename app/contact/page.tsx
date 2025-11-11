@@ -39,7 +39,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Adresse</h3>
                     <p className="text-gray-600">
-                      Casablanca, Maroc
+                      Lot 341, Lotissement Nasrallah - Berrechid
                     </p>
                   </div>
                 </div>
@@ -50,7 +50,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Téléphone</h3>
                     <p className="text-gray-600">
-                      +212 XXX XXX XXX
+                      +212 6 61 41 91 15
                     </p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <p className="text-gray-600">
-                      contact@bureau-etude.ma
+                      pin22.maroc@gmail.com
                     </p>
                   </div>
                 </div>
@@ -79,10 +79,18 @@ export default function ContactPage() {
             </div>
           </div>
 
+          {/* Map replaced with neutral SVG placeholder for privacy and performance */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Notre localisation</h2>
-            <div className="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-              <p className="text-gray-500">Carte Google Maps - À intégrer avec votre clé API</p>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Zone d'intervention</h2>
+            <div className="bg-gray-100 rounded-lg h-96 flex items-center justify-center p-4">
+              <svg viewBox="0 0 400 240" role="img" aria-label="Carte illustrative simplifiée" className="w-full h-full">
+                <rect width="400" height="240" rx="12" fill="#f3f4f6" />
+                <circle cx="120" cy="120" r="70" fill="#e5e7eb" />
+                <circle cx="280" cy="120" r="70" fill="#e5e7eb" />
+                <circle cx="200" cy="120" r="70" fill="#d1d5db" />
+                <path d="M200 60 L210 110 L260 120 L210 130 L200 180 L190 130 L140 120 L190 110 Z" fill="#E53935" opacity="0.8" />
+                <text x="200" y="225" textAnchor="middle" fontSize="14" fill="#6b7280">Illustration - PIN Ingénierie</text>
+              </svg>
             </div>
           </div>
         </div>

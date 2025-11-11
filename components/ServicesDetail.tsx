@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaBuilding,
   FaCalculator,
@@ -20,6 +21,10 @@ const services = [
       "Vérification de la stabilité",
       "Notes de calcul détaillées",
     ],
+    image: {
+      src: "/services/structure.png",
+      alt: "Études de structures béton et acier réalisées par PIN Ingénierie",
+    },
   },
   {
     icon: FaCalculator,
@@ -32,30 +37,42 @@ const services = [
       "Documentation technique complète",
       "Vérification par des experts",
     ],
+    image: {
+      src: "/services/calculs.png",
+      alt: "Calculs et notes de calcul détaillées pour vos projets",
+    },
   },
   {
     icon: FaDraftingCompass,
-    title: "Plans d&apos;Architecture & Plans d&apos;Exécution",
+    title: "Plans Architecture & Plans Exécution",
     description:
-      "Réalisation de plans techniques précis pour la construction : plans d&apos;architecture, plans d&apos;exécution, détails constructifs. Tous nos plans sont réalisés avec les logiciels professionnels (AutoCAD, Revit).",
+      "Réalisation de plans techniques précis pour la construction : plans d'architecture, plans d'exécution, détails constructifs. Tous nos plans sont réalisés avec les logiciels professionnels (AutoCAD, Revit).",
     features: [
-      "Plans d&apos;architecture",
-      "Plans d&apos;exécution",
-      "Détails constructifs",
+      "Plans Architecture",
+      "Plans Exécution",
+      "Détails Constructifs",
       "Modélisation 2D/3D",
     ],
+    image: {
+      src: "/services/plans.png",
+      alt: "Plans d'architecture et d'exécution précis par PIN Ingénierie",
+    },
   },
   {
     icon: FaRoad,
     title: "Études VRD",
     description:
-      "Études complètes de Voirie et Réseaux Divers : conception de réseaux d&apos;assainissement, d&apos;eau potable, d&apos;électricité, et de voirie pour vos projets.",
+      "Études complètes de Voirie et Réseaux Divers : conception de réseaux d'assainissement, d&apos;eau potable, d&apos;électricité, et de voirie pour vos projets.",
     features: [
       "Réseaux d&apos;assainissement",
-      "Réseaux d&apos;eau potable",
+      "Réseaux d'eau potable",
       "Réseaux électriques",
       "Conception de voirie",
     ],
+    image: {
+      src: "/services/vdr.png",
+      alt: "Études VRD pour réseaux et voirie",
+    },
   },
   {
     icon: FaSearch,
@@ -68,6 +85,10 @@ const services = [
       "Évaluation de sécurité",
       "Propositions de renforcement",
     ],
+    image: {
+      src: "/services/diagnostic.png",
+      alt: "Diagnostic technique et expertise structurale",
+    },
   },
   {
     icon: FaCube,
@@ -80,6 +101,10 @@ const services = [
       "Visualisation interactive",
       "Maquettes numériques",
     ],
+    image: {
+      src: "/services/modelisation.png",
+      alt: "Modélisation 3D et visualisation pour projets de construction",
+    },
   },
 ];
 
@@ -119,8 +144,15 @@ export default function ServicesDetail() {
                     Demander un devis
                   </Link>
                 </div>
-                <div className="flex-1 bg-gray-100 rounded-lg h-64 lg:h-80 flex items-center justify-center">
-                  <p className="text-gray-500">Image illustrative</p>
+                <div className="flex-1 w-full">
+                  <Image
+                    src={service.image.src}
+                    alt={service.image.alt}
+                    width={1200}
+                    height={800}
+                    className="w-full h-64 lg:h-80 object-cover rounded-lg bg-gray-100"
+                    priority={index === 0}
+                  />
                 </div>
               </div>
             );

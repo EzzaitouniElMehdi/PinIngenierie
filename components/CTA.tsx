@@ -22,7 +22,7 @@ export default function CTA() {
             </Link>
             <Link
               href="/services"
-              className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600"
+              className="btn-secondary"
             >
               Découvrir nos services
             </Link>

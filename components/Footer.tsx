@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebook, FaLinkedin, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function Footer() {
@@ -8,12 +9,17 @@ export default function Footer() {
         <div className="section-padding">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <div className="bg-primary-600 text-white px-3 py-1 rounded font-bold text-xl">
-                  BE
-                </div>
-                <span className="font-bold text-white text-lg">
-                  Bureau d&apos;Étude
+              <div className="flex items-center space-x-3 mb-4">
+                <Image
+                  src="/logo/pin-logo.png"
+                  alt="PIN Ingénierie logo"
+                  width={56}
+                  height={56}
+                  className="h-12 w-auto"
+                />
+                <span className="font-extrabold text-white text-xl tracking-tight select-none">
+                  <span className="text-white">P</span>
+                  <span className="text-primary-500">in Ingénierie</span>
                 </span>
               </div>
               <p className="text-gray-400 mb-4">
@@ -80,7 +86,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="/services" className="hover:text-primary-400 transition-colors">
-                    Plans d&apos;exécution
+                    Plans d'exécution
                   </Link>
                 </li>
                 <li>
@@ -101,11 +107,11 @@ export default function Footer() {
               <ul className="space-y-3">
                 <li className="flex items-center gap-2">
                   <FaPhone className="text-primary-400" />
-                  <span>+212 XXX XXX XXX</span>
+                  <span>+212 6 61 41 91 15</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <FaEnvelope className="text-primary-400" />
-                  <span>contact@bureau-etude.ma</span>
+                  <span>pin22.maroc@gmail.com</span>
                 </li>
               </ul>
               <Link
@@ -121,7 +127,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 py-6 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>
-              © {new Date().getFullYear()} Bureau d&apos;Étude en Génie Civil. Tous droits réservés.
+              © {new Date().getFullYear()} Bureau d'Étude en Génie Civil. Tous droits réservés.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-primary-400 transition-colors">

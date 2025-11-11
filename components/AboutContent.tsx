@@ -69,7 +69,7 @@ export default function AboutContent() {
                 Notre Vision
               </h2>
               <p className="text-gray-600 mb-4">
-                Devenir la référence en matière de bureau d&apos;étude en génie civil au Maroc, reconnu pour notre expertise technique et notre engagement envers l&apos;excellence.
+                Devenir la référence en matière de bureau d'étude en génie civil au Maroc, reconnu pour notre expertise technique et notre engagement envers l&apos;excellence.
               </p>
               <p className="text-gray-600">
                 Nous aspirons à contribuer au développement du secteur de la construction au Maroc en proposant des solutions innovantes et durables.
@@ -115,10 +115,10 @@ export default function AboutContent() {
                 Notre Expérience
               </h2>
               <p className="text-gray-600 mb-4">
-                Forts de plusieurs années d&apos;expérience dans le domaine du génie civil, nous avons accompagné de nombreux projets de différentes envergures : maisons individuelles, immeubles résidentiels, bâtiments commerciaux et industriels.
+                Forts de plusieurs années d'expérience dans le domaine du génie civil, nous avons accompagné de nombreux projets de différentes envergures : maisons individuelles, immeubles résidentiels, bâtiments commerciaux et industriels.
               </p>
               <p className="text-gray-600 mb-4">
-                Notre équipe est composée d&apos;ingénieurs diplômés et certifiés, spécialisés dans différents domaines du génie civil. Nous restons constamment à jour avec les dernières normes et réglementations.
+                Notre équipe est composée d'ingénieurs diplômés et certifiés, spécialisés dans différents domaines du génie civil. Nous restons constamment à jour avec les dernières normes et réglementations.
               </p>
               <div className="bg-primary-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-gray-900 mb-2">
@@ -153,7 +153,7 @@ export default function AboutContent() {
         </div>
       </section>
 
-      {/* Team Section */}
+      {/* Team Section (photos removed, replaced with SVG initials avatars) */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
@@ -165,14 +165,19 @@ export default function AboutContent() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {[1, 2, 3].map((member) => (
-              <div key={member} className="bg-white rounded-xl shadow-md overflow-hidden">
-                <div className="bg-gray-200 h-64 flex items-center justify-center">
-                  <p className="text-gray-500">Photo équipe</p>
+            {[{name: "Ingénieur 1", initials: "I1"}, {name: "Ingénieur 2", initials: "I2"}, {name: "Ingénieur 3", initials: "I3"}].map((member) => (
+              <div key={member.name} className="bg-white rounded-xl shadow-md overflow-hidden">
+                <div className="bg-gray-100 h-64 flex items-center justify-center">
+                  <svg viewBox="0 0 120 120" role="img" aria-label={`Avatar ${member.name}`} className="w-32 h-32">
+                    <circle cx="60" cy="60" r="58" fill="#f3f4f6" stroke="#e5e7eb" strokeWidth="2" />
+                    <circle cx="60" cy="46" r="18" fill="#d1d5db" />
+                    <rect x="22" y="70" width="76" height="36" rx="18" fill="#d1d5db" />
+                    <text x="60" y="113" textAnchor="middle" fontSize="16" fontWeight="700" fill="#111111">{member.initials}</text>
+                  </svg>
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-900 mb-1">
-                    Ingénieur {member}
+                    {member.name}
                   </h3>
                   <p className="text-gray-600">Spécialiste en génie civil</p>
                 </div>

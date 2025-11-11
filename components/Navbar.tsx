@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,12 +23,17 @@ export default function Navbar() {
     <nav className="bg-white shadow-md fixed w-full top-0 z-50">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 px-4">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-primary-600 text-white px-3 py-1 rounded font-bold text-xl">
-              BE
-            </div>
-            <span className="font-bold text-gray-900 text-lg">
-              Bureau d&apos;Étude
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/logo/pin-logo.png"
+              alt="PIN Ingénierie logo"
+              width={100}
+              height={100}
+              className="h-12 w-auto"
+            />
+            <span className="font-extrabold text-xl tracking-tight select-none">
+              <span className="text-secondary-900">P</span>
+              <span className="text-primary-600">in Ingénierie</span>
             </span>
           </Link>
 

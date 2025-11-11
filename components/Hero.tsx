@@ -21,7 +21,7 @@ export default function Hero() {
               Demander un devis gratuit
               <FaArrowRight />
             </Link>
-            <Link href="/contact" className="btn-secondary border-white text-white hover:bg-white hover:text-primary-600">
+            <Link href="/contact" className="btn-secondary">
               Nous contacter
             </Link>
           </div>
