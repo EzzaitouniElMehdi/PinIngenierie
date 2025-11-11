@@ -60,7 +60,7 @@ export async function POST(request: NextRequest) {
       await resend.emails.send({
         from: RESEND_FROM,
         to: RESEND_TO,
-        reply_to: email,
+        replyTo: email,
         subject,
         html,
       });
