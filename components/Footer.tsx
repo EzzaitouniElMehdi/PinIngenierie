@@ -13,8 +13,8 @@ export default function Footer() {
                 <Image
                   src="/logo/pin-logo.png"
                   alt="PIN Ingénierie logo"
-                  width={56}
-                  height={56}
+                  width={80}
+                  height={80}
                   className="h-12 w-auto"
                 />
                 <span className="font-extrabold text-white text-xl tracking-tight select-none">
@@ -86,7 +86,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link href="/services" className="hover:text-primary-400 transition-colors">
-                    Plans d'exécution
+                    Plans d exécution
                   </Link>
                 </li>
                 <li>
@@ -127,7 +127,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 py-6 px-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>
-              © {new Date().getFullYear()} Bureau d'Étude en Génie Civil. Tous droits réservés.
+              © {new Date().getFullYear()} Bureau d Étude en Génie Civil. Tous droits réservés.
             </p>
             <div className="flex gap-6 mt-4 md:mt-0">
               <Link href="#" className="hover:text-primary-400 transition-colors">

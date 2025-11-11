@@ -69,7 +69,7 @@ export default function AboutContent() {
                 Notre Vision
               </h2>
               <p className="text-gray-600 mb-4">
-                Devenir la référence en matière de bureau d'étude en génie civil au Maroc, reconnu pour notre expertise technique et notre engagement envers l&apos;excellence.
+                Devenir la référence en matière de bureau d étude en génie civil au Maroc, reconnu pour notre expertise technique et notre engagement envers l&apos;excellence.
               </p>
               <p className="text-gray-600">
                 Nous aspirons à contribuer au développement du secteur de la construction au Maroc en proposant des solutions innovantes et durables.
@@ -115,10 +115,10 @@ export default function AboutContent() {
                 Notre Expérience
               </h2>
               <p className="text-gray-600 mb-4">
-                Forts de plusieurs années d'expérience dans le domaine du génie civil, nous avons accompagné de nombreux projets de différentes envergures : maisons individuelles, immeubles résidentiels, bâtiments commerciaux et industriels.
+                Forts de plusieurs années d expérience dans le domaine du génie civil, nous avons accompagné de nombreux projets de différentes envergures : maisons individuelles, immeubles résidentiels, bâtiments commerciaux et industriels.
               </p>
               <p className="text-gray-600 mb-4">
-                Notre équipe est composée d'ingénieurs diplômés et certifiés, spécialisés dans différents domaines du génie civil. Nous restons constamment à jour avec les dernières normes et réglementations.
+                Notre équipe est composée d ingénieurs diplômés et certifiés, spécialisés dans différents domaines du génie civil. Nous restons constamment à jour avec les dernières normes et réglementations.
               </p>
               <div className="bg-primary-50 p-6 rounded-lg">
                 <h3 className="font-semibold text-gray-900 mb-2">
@@ -161,7 +161,7 @@ export default function AboutContent() {
               Notre Équipe
             </h2>
             <p className="text-xl text-gray-600">
-              Une équipe d&apos;experts à votre service
+              Une équipe d experts à votre service
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">

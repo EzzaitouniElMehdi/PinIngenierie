@@ -68,7 +68,7 @@ export default function ContactPage() {
               </div>
 
               <div className="mt-8 bg-gray-100 rounded-lg p-6">
-                <h3 className="font-semibold text-gray-900 mb-2">Horaires d'ouverture</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Horaires d ouverture</h3>
                 <p className="text-gray-600 mb-1">Lundi - Vendredi: 9h00 - 18h00</p>
                 <p className="text-gray-600">Samedi: 9h00 - 13h00</p>
               </div>
@@ -81,7 +81,7 @@ export default function ContactPage() {
 
           {/* Map replaced with neutral SVG placeholder for privacy and performance */}
           <div className="mt-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Zone d'intervention</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Zone d intervention</h2>
             <div className="bg-gray-100 rounded-lg h-96 flex items-center justify-center p-4">
               <svg viewBox="0 0 400 240" role="img" aria-label="Carte illustrative simplifiée" className="w-full h-full">
                 <rect width="400" height="240" rx="12" fill="#f3f4f6" />
